@@ -1,3 +1,5 @@
+import { IoCheckmark } from "react-icons/io5";
+
 import { cx } from "../brutal";
 
 type Props = {
@@ -24,7 +26,9 @@ export function OptionButton({ option, isSelected, onSelect }: Props) {
           isSelected ? "bg-indigo-500" : "bg-white"
         )}
         aria-hidden
-      />
+      >
+        {isSelected ? <IoCheckmark className="text-white" size={16} /> : null}
+      </span>
       <span className="text-sm font-bold text-black">{option}</span>
     </button>
   );
