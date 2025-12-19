@@ -1,13 +1,13 @@
 import { useMemo, useState } from "react";
 
-import { questions } from "./data/questions";
-import { BrutBadge, BrutCard } from "./components/brutal";
+import { BrutBadge, BrutCard } from "@/components/brutal";
 import {
   NavButtons,
   OptionButton,
   ProgressHeader,
   ResultsView,
-} from "./components/questionnaire";
+} from "@/components/questionnaire";
+import { questions } from "@/data/questions";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);

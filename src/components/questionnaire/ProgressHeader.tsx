@@ -1,4 +1,4 @@
-import { BrutProgress } from "../brutal";
+import { BrutProgress } from "@/components/brutal";
 
 type Props = {
   currentIndex: number;

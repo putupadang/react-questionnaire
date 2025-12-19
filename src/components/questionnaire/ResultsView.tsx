@@ -1,5 +1,5 @@
-import { questions } from "../../data/questions";
-import { BrutBadge, BrutButton, BrutCard, cx } from "../brutal";
+import { questions } from "@/data/questions";
+import { BrutBadge, BrutButton, BrutCard, cx } from "@/components/brutal";
 
 type Props = {
   answers: string[];

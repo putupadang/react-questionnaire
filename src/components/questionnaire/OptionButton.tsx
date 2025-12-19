@@ -1,6 +1,6 @@
 import { IoCheckmark } from "react-icons/io5";
 
-import { cx } from "../brutal";
+import { cx } from "@/components/brutal";
 
 type Props = {
   option: string;

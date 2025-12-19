@@ -1,4 +1,4 @@
-import { BrutButton } from "../brutal";
+import { BrutButton } from "@/components/brutal";
 
 type Props = {
   canGoBack: boolean;

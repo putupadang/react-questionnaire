@@ -1,4 +1,4 @@
-export { NavButtons } from "./NavButtons";
-export { OptionButton } from "./OptionButton";
-export { ProgressHeader } from "./ProgressHeader";
-export { ResultsView } from "./ResultsView";
+export { NavButtons } from "@/components/questionnaire/NavButtons";
+export { OptionButton } from "@/components/questionnaire/OptionButton";
+export { ProgressHeader } from "@/components/questionnaire/ProgressHeader";
+export { ResultsView } from "@/components/questionnaire/ResultsView";

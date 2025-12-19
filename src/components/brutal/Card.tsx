@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { cx } from "./cx";
+import { cx } from "@/components/brutal/cx";
 
 type Props = {
   children: ReactNode;

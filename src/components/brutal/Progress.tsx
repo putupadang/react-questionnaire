@@ -1,4 +1,4 @@
-import { cx } from "./cx";
+import { cx } from "@/components/brutal/cx";
 
 type Props = {
   value: number;
