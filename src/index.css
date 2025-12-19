@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply min-h-screen bg-[#f6f1dd] text-black antialiased;
+    @apply min-h-screen bg-brutal-bg text-brutal-text antialiased;
   }
 
   #root {

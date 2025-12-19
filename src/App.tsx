@@ -57,12 +57,12 @@ function App() {
 
   return (
     <main className="mx-auto w-full max-w-3xl px-4 py-10 md:py-14">
-      <BrutCard className="bg-white">
+      <BrutCard className="bg-brutal-surface">
         <BrutBadge>First impressions</BrutBadge>
-        <h1 className="mt-3 text-3xl font-extrabold text-black md:text-4xl">
+        <h1 className="mt-3 text-3xl font-extrabold text-brutal-text md:text-4xl">
           What people feel when they meet you
         </h1>
-        <p className="mt-2 text-base font-medium text-black/80 md:text-lg">
+        <p className="mt-2 text-base font-medium text-brutal-muted md:text-lg">
           A light, single-question flow to capture how your presence comes
           across at first glance.
         </p>
@@ -77,13 +77,13 @@ function App() {
           />
 
           <div className="mt-5 space-y-4">
-            <p className="text-sm font-extrabold uppercase tracking-wide text-black">
+            <p className="text-sm font-extrabold uppercase tracking-wide text-brutal-text">
               First moments
             </p>
-            <h2 className="text-2xl font-extrabold text-black md:text-3xl">
+            <h2 className="text-2xl font-extrabold text-brutal-text md:text-3xl">
               {currentQuestion.prompt}
             </h2>
-            <p className="text-sm font-medium text-black/80">
+            <p className="text-sm font-medium text-brutal-muted">
               Think of someone meeting you for the very first time.
             </p>
 

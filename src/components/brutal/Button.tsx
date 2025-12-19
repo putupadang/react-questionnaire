@@ -9,15 +9,15 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const baseClassName = cx(
-  "border-2 border-black shadow-[6px_6px_0_#000] transition",
+  "border-2 border-brutal-border shadow-[6px_6px_0_#000] transition",
   "enabled:hover:-translate-x-[1px] enabled:hover:-translate-y-[1px] enabled:hover:shadow-[8px_8px_0_#000]",
-  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brutal-border",
   "disabled:cursor-not-allowed disabled:opacity-60"
 );
 
 const variantClassName: Record<Variant, string> = {
-  primary: "bg-indigo-500 text-white",
-  secondary: "bg-white text-black",
+  primary: "bg-brutal-accent text-brutal-surface",
+  secondary: "bg-brutal-surface text-brutal-text",
 };
 
 export function BrutButton({

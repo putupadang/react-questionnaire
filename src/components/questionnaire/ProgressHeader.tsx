@@ -9,7 +9,7 @@ type Props = {
 export function ProgressHeader({ currentIndex, total, progressValue }: Props) {
   return (
     <div className="space-y-3">
-      <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-black">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-brutal-text">
         <span>
           Question {currentIndex + 1} of {total}
         </span>
