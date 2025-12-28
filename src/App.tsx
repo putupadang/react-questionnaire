@@ -60,12 +60,9 @@ function App() {
       <BrutCard className="bg-brutal-surface">
         <BrutBadge>First impressions</BrutBadge>
         <h1 className="mt-3 text-3xl font-extrabold text-brutal-text md:text-4xl">
-          What people feel when they meet you
+          What do you feel when meet me?
         </h1>
-        <p className="mt-2 text-base font-medium text-brutal-muted md:text-lg">
-          A light, single-question flow to capture how your presence comes
-          across at first glance.
-        </p>
+        <p className="mt-2 text-base font-medium text-brutal-muted md:text-lg"></p>
       </BrutCard>
 
       <div className="mt-5">
@@ -77,15 +74,15 @@ function App() {
           />
 
           <div className="mt-5 space-y-4">
-            <p className="text-sm font-extrabold uppercase tracking-wide text-brutal-text">
+            {/* <p className="text-sm font-extrabold uppercase tracking-wide text-brutal-text">
               First moments
-            </p>
+            </p> */}
             <h2 className="text-2xl font-extrabold text-brutal-text md:text-3xl">
               {currentQuestion.prompt}
             </h2>
-            <p className="text-sm font-medium text-brutal-muted">
+            {/* <p className="text-sm font-medium text-brutal-muted">
               Think of someone meeting you for the very first time.
-            </p>
+            </p> */}
 
             <div className="grid gap-3 sm:grid-cols-2">
               {currentQuestion.options.map((option) => (

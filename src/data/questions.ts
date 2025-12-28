@@ -4,15 +4,15 @@ export type Question = {
 };
 
 export const questions: Question[] = [
-  {
-    prompt: "What is the first thing people usually notice about me?",
-    options: [
-      "My smile",
-      "My style or appearance",
-      "My energy or vibe",
-      "My confidence",
-    ],
-  },
+  // {
+  //   prompt: "What is the first thing people usually notice about me?",
+  //   options: [
+  //     "My smile",
+  //     "My style or appearance",
+  //     "My energy or vibe",
+  //     "My confidence",
+  //   ],
+  // },
   {
     prompt: "How do people typically feel when they first meet me?",
     options: ["Comfortable", "Curious", "Impressed", "Unsure but interested"],
@@ -83,5 +83,9 @@ export const questions: Question[] = [
       "My communication style",
       "My overall presence",
     ],
+  },
+  {
+    prompt: "Kamu suka sm aku ga?",
+    options: ["Engga", "Iyaa"],
   },
 ];
