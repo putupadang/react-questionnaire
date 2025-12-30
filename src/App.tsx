@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 import { BrutBadge, BrutCard } from "@/components/brutal";
 import {
@@ -31,10 +32,44 @@ function App() {
     });
   };
 
+  const saveResults = async (finalAnswers: string[]) => {
+    const timestamp = new Date().toLocaleString("en-US", {
+      timeZone: "Asia/Shanghai", // UTC+8
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    });
+
+    const userAgent = navigator.userAgent;
+
+    // Combine questions and answers
+    const payload = questions.map((q, index) => ({
+      question: q.prompt,
+      answer: finalAnswers[index],
+    }));
+
+    console.log("Saving results:", { answers: payload, timestamp, userAgent });
+
+    const { error } = await supabase.from("questionnaire_results").insert({
+      answers: payload,
+      submitted_at_local: timestamp,
+      device_info: userAgent,
+    });
+
+    if (error) {
+      console.error("Error saving results:", error);
+    }
+  };
+
   const handleNext = () => {
     if (!answers[currentIndex]) return;
     if (currentIndex === questions.length - 1) {
       setIsComplete(true);
+      saveResults(answers);
     } else {
       setCurrentIndex((prev) => prev + 1);
     }
