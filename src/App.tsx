@@ -93,7 +93,7 @@ function App() {
   return (
     <main className="mx-auto w-full max-w-3xl px-4 py-10 md:py-14">
       <BrutCard className="bg-brutal-surface">
-        <BrutBadge>First impressions</BrutBadge>
+        <BrutBadge>First impressions-ogive ggwp</BrutBadge>
         <h1 className="mt-3 text-3xl font-extrabold text-brutal-text md:text-4xl">
           What do you feel when meet me?
         </h1>

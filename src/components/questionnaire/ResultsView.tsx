@@ -10,7 +10,7 @@ export function ResultsView({ answers, onRestart }: Props) {
   return (
     <main className="mx-auto w-full max-w-3xl px-4 py-10 md:py-14">
       <BrutCard>
-        <BrutBadge>First impressions</BrutBadge>
+        <BrutBadge>First impressions-ogive ggwp</BrutBadge>
         <h1 className="mt-3 text-3xl font-extrabold text-brutal-text md:text-4xl">
           Thank you for sharing!
         </h1>
